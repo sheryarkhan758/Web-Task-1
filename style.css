@@ -1,0 +1,124 @@
+/* Stylish Background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('w2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Top Header */
+.top-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.top-header h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.top-header p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+/* Container for Name and Roll No */
+.container {
+    background: rgba(28, 40, 51, 0.8); /* Dark blue-grey that matches the background */
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for better visibility */
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Name and Roll Number */
+.info h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.info p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Profile Picture at Top Right */
+.image {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional: adds subtle shadow */
+}
+
+/* Grades Table */
+table {
+    width: 70%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: rgb(115, 115, 115);
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(91, 83, 83, 0.2);
+    margin: 20px auto 0 auto;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #1c1b1b; /* Changed from #0072ff to a grey shade */
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+td {
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    
+    .image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    table {
+        width: 80%;
+    }
+}
